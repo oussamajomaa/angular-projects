@@ -1,0 +1,36 @@
+
+<div class="row">
+    
+    <div class="col-sm-4 mb-1 ">
+        
+        <button 
+            style="width: 100%;" 
+            class="btn"
+            (click)="onButton()"
+            [ngClass]="{'btn-outline-danger': isClicked===true,'btn-outline-info': isClicked===false}">
+            {{ tabou }}
+        </button>
+        
+    </div>
+    
+    <div class="col-sm-8" *ngIf="isClicked===true" >
+        <input type="text" [(ngModel)]="tabou" disabled class="w-100 text-center form-control border-danger" >
+        <p *ngFor="let item of soura" >
+            <span class="text-danger font-weight-bold">{{ item.titre }}</span><br>
+            <span>{{ item.texte }}</span>
+            <a style="text-decoration: none;" href=""><span class="text-success">{{ item.texte1 }}</span></a>
+            <span>{{ item.texte2 }}</span>
+
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+    
+    
+
+

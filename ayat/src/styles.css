@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+	
+@import url(http://fonts.googleapis.com/earlyaccess/amiri.css);
+/* .amiri{font-family: 'Amiri', serif;} */
+
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+/* .droid-arabic-naskh{font-family: 'Droid Arabic Naskh', serif;} */
+
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+/* font-family: “Droid Arabic Kufi”, serif; */
+
+@import url(http://fonts.googleapis.com/earlyaccess/lateef.css); 
+/* .lateef{font-family: 'Lateef', serif;} */
+
+@import url(http://fonts.googleapis.com/earlyaccess/scheherazade.css);
+/* font-family: ‘Scheherazade’, serif; */
+
+*{
+    direction: rtl;
+    text-align: right;
+    font-family: 'Droid Arabic Kufi', serif;;
+}
+
+button{
+    font-family: 'Droid Arabic Kufi', serif;
+}
+
+
+

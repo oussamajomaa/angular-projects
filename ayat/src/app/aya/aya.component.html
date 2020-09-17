@@ -1,0 +1,12 @@
+
+    <h3 class="w-100 text-light bg-info p-3 rounded text-center">المحرمات في القرآن</h3>
+    <div class="row ">
+        <div class="col ">
+            <app-aya-view *ngFor="let aya of aya_list, let i = index" 
+                [tabou]="aya.tabou" 
+                [numero]="i"
+                [id]="aya.id">
+
+            </app-aya-view>
+        </div>
+    </div>
