@@ -1,0 +1,20 @@
+<h4 class="w-100 text-light bg-info p-3 rounded text-center font-weight-bold">{{ oneAya.tabou }}</h4>
+
+
+<p *ngFor="let soura of oneAya.soura" class="mr-5" style="line-height: 40px;">
+    <span class="text-success font-weight-bold ">
+        {{ soura.titre }}<br>
+    </span>
+    
+    {{ soura.texte }}
+    <!-- envoie de idSoura dans l'url --> 
+    <a [routerLink]="soura.idSoura">
+        <span class="text-danger">{{ soura.texte1 }}</span>
+    </a>
+    {{ soura.texte2 }} 
+</p>
+
+<p class="text-left">
+
+    <a class="btn btn-info btn-sm " routerLink="/ayat">الرجوع إلى القائمة</a>
+</p>
